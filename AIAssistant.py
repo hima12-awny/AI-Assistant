@@ -4,14 +4,17 @@ import speech_recognition as sr
 
 
 class AIAssistant:
-    def __init__(self):
+    def __init__(self, gender='male'):
         # Initialize OpenAI API key and GPT language model
-        openai.api_key = "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"
-        self.model_engine = "gpt-4-0314"
+        openai.api_key = "your OpenAI API here"
+        self.model_engine = "gpt-3.5-turbo"
 
         # Initialize text-to-speech engine and set properties
         self.sound_engine = pyttsx3.init()
         self.sound_engine.setProperty('rate', 150)
+        self.sound_engine.setProperty('voice',
+                                      self.sound_engine.getProperty('voices')[['male', 'female'].index(gender)])
+
 
         # Initialize speech recognition engine and microphone
         self.recognizer = sr.Recognizer()
@@ -89,7 +92,7 @@ class AIAssistant:
 
         # Generate response using GPT language model
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model=self.model_engine,
             messages=self.chat_history
         )
 
