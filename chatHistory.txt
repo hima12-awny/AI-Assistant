@@ -1,0 +1,13 @@
+system,,You are a helpful assistant.
+user,,hello my friend hello my friend hi
+assistant,,Hello! How can I assist you today?
+user,,my name is Ibrahim
+assistant,,Nice to meet you, Ibrahim! How can I assist you today?
+user,,my favourite hobby is bing bong
+assistant,,That's interesting, but I'm not quite sure what you mean by "bing bong". Can you please explain what this hobby involves?
+user,,do you know about football
+assistant,,Yes, I know about football (also known as soccer in some countries). It's a popular sport that is played between two teams of 11 players each, with the objective of scoring goals by kicking a ball into the opposing team's goal.
+user,,do you know about football
+assistant,,Yes, I am familiar with football. It is a popular sport played all over the world, and involves two teams of 11 players each trying to score goals by kicking a ball into the opposing team's net. It requires a combination of physical skills, strategy and teamwork to be successful in the game.
+user,,hey do you know my name
+assistant,,Yes, your name is Ibrahim. Is there anything else I can help you with today?
